@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Furnique - Furniture Store</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../dist/main.css" />
+    </head>
+    <body>
+        <header class="fixed lg:relative top-0 w-full bg-white">
+            <div class="flex flex-col lg:flex-row mx-5 lg:mx-20 items-center lg:justify-between py-4">
+                <div class="flex lg:inline-flex items-center justify-between w-full lg:w-auto">
+                    <h3>Furnique</h3>
+                    <button id="navbar-toggle" class="p-4 border-solid border-gray-700 border-2 rounded flex lg:hidden"><i class="fa-regular fa-bars"></i></button>
+                </div>
+                <ul class="navbar-menu hidden lg:flex pt-8 lg:p-0 flex-col lg:flex-row text-center gap-4 lg:gap-12">
+                    <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a href="#">Home</a></li>
+                    <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a href="#">Catalog</a></li>
+                    <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a href="#">About</a></li>
+                </ul>
+                <div class="navbar-menu hidden lg:flex pb-8 lg:p-0 flex-col mt-4 lg:mt-0 lg:flex-row gap-4 lg:gap-8">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </header>
+        <!-- Jumbotron Section -->
+        <section class="jumbotron w-full mt-12 pt-24 lg:pt-0">
+            <div class="flex flex-nowrap flex-col lg:flex-row items-center gap-8">
+                <div class="flex flex-col mx-5 lg:mx-20 gap-8">
+                    <div class="flex flex-col gap-4 items-center justify-center text-center lg:items-start lg:justify-start lg:text-left">
+                        <h1>
+                            Furnish your home,<br />
+                            enrich your life
+                        </h1>
+                        <p>We offer a wide selection of stylish and affordable furniture for every room in your home. From cozy living room sets to chic bedroom pieces, we have something for everyone.</p>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-0 justify-center lg:justify-start">
+                        <input class="px-6 py-2 lg:pr-32 border-2 outline-0 border-black border-solid" type="text" placeholder="Search your product here" />
+                        <button class="px-6 py-2 border-2 border-black border-solid bg-black text-white">Search</button>
+                    </div>
+                </div>
+                <div class="flex justify-end w-4/5 lg:w-full">
+                    <img class="lg:w-full" src="../dist/img/hero-image.jpg" alt="Hero Section Image" />
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="services my-40">
+            <div class="mx-5 lg:mx-20 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Benefit Box -->
+                <div class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease bg-white p-8 gap-8 flex flex-col items-start">
+                    <div class="p-4 inline-flex items-center justify-center bg-black">
+                        <i class="text-white fa-regular fa-truck"></i>
+                    </div>
+                    <div class="gap-2">
+                        <h5>Delivery and installation services</h5>
+                        <p>Customers can choose to have their new furniture delivered to their home and professionally installed by the store's team of experts.</p>
+                    </div>
+                </div>
+                <!-- Benefit Box -->
+                <div class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease bg-white p-8 gap-8 flex flex-col items-start">
+                    <div class="p-4 inline-flex items-center justify-center bg-black">
+                        <i class="text-white fa-regular fa-gear"></i>
+                    </div>
+                    <div class="gap-2">
+                        <h5>Customization options</h5>
+                        <p>Many furniture stores offer the ability to customize certain pieces to fit the specific needs and style of the customer. This can include options such as different fabrics, sizes, and finishes.</p>
+                    </div>
+                </div>
+                <!-- Benefit Box -->
+                <div class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease bg-white p-8 gap-8 flex flex-col items-start">
+                    <div class="p-4 inline-flex items-center justify-center bg-black">
+                        <i class="text-white fa-regular fa-screwdriver-wrench"></i>
+                    </div>
+                    <div class="gap-2">
+                        <h5>Furniture repair and restoration services</h5>
+                        <p>For those who have older furniture or pieces that have been damaged, the store may offer repair and restoration services to bring the items back to their original condition.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products my-40">
+            <div class="text-center flex flex-col gap-2 mb-16">
+                <h2>Featured Products</h2>
+                <p>Recommended Products for You</p>
+            </div>
+            <div class="mx-5 lg:mx-20 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                    <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
+                        <img src="../dist/img/Product 1.jpg" alt="Product Image" />
+                        <div>
+                            <p class="font-semibold">HYLISS</p>
+                            <h5>Rp 329.000</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                    <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
+                        <img src="../dist/img/Product 2.jpg" alt="Product Image" />
+                        <div>
+                            <p class="font-semibold">BRUSAL</p>
+                            <h5>Rp 1.499.000</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                    <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
+                        <img src="../dist/img/Product 3.jpg" alt="Product Image" />
+                        <div>
+                            <p class="font-semibold">BRIMNES</p>
+                            <h5>Rp 2.299.000</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                    <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
+                        <img src="../dist/img/Product 4.jpg" alt="Product Image" />
+                        <div>
+                            <p class="font-semibold">HEMNES</p>
+                            <h5>Rp 2.499.000</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Offer Section -->
+        <section class="offer my-40">
+            <div class="mx-5 lg:mx-20 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="w-full">
+                    <img src="../dist/img/Sofa.png" alt="Sofa" />
+                </div>
+                <div class="flex flex-col gap-8 text-center lg:text-left items-center lg:items-start">
+                    <div class="flex flex-col gap-4">
+                        <h2>High Quality Guaranted</h2>
+                        <p>
+                            Investing in high-quality furniture is worth it for both style and longevity. Not only will it enhance the look and feel of your home, but it will also last longer and save you money in the long run. Don't settle for cheaply made pieces that will need to be replaced or
+                            repaired frequently. Choose furniture that will stand the test of time and truly elevate your space.Investing in high-quality furniture is worth it for both style and longevity.
+                        </p>
+                    </div>
+                    <a href="#" class="bg-black text-white inline-block px-6 py-3 hover:scale-110 transition-all ease duration-300">Explore More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial my-40">
+            <div class="mx-5 lg:mx-20">
+                <div class="text-center mb-16">
+                    <h2>Our Satisfied Customers</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex flex-col gap-4 items-start p-8 lg:p-12 bg-white">
+                            <div class="flex gap-4">
+                                <img src="../dist/img/Cust 1.png" alt="Customer 1" />
+                                <div>
+                                    <p class="font-semibold">Kianna Geidt</p>
+                                    <p class="text-sm">Business Consultant</p>
+                                </div>
+                            </div>
+                            <p>
+                                I recently purchased a new chair from <strong>Furnique</strong> and I am extremely satisfied with my purchase. The chair is not only stylish, but it's also extremely comfortable and well-made. The materials used are of high quality and I have no doubt it will last for
+                                many years. I highly recommend <strong>Furnique</strong> for anyone in need of new furniture.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex flex-col gap-4 items-start p-8 lg:p-12 bg-white">
+                            <div class="flex gap-4">
+                                <img src="../dist/img/Cust 2.png" alt="Customer 2" />
+                                <div>
+                                    <p class="font-semibold">Cooper Septimus</p>
+                                    <p class="text-sm">UI Designer</p>
+                                </div>
+                            </div>
+                            <p>
+                                I recently purchased a dining table from <strong>Furnique</strong> and I am extremely happy with my purchase. The table is beautifully crafted with a sleek design and it's clear that attention to detail was a priority in its construction. The wood is high quality and
+                                the finish is flawless.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter my-40">
+            <div class="lg:mx-20 flex flex-col flex-wrap gap-8 text-center justify-center">
+                <div class="flex flex-col gap-2">
+                    <h2>Subscribe Our Newsletter</h2>
+                    <p>Sign up for our newsletter and receive exclusive updates and promotions</p>
+                </div>
+                <div class="mx-auto flex lg:flex-row flex-col gap-0 justify-center lg:justify-start">
+                    <input class="px-6 py-2 lg:pr-32 border-2 outline-0 border-black border-solid" type="text" placeholder="Enter your email address..." />
+                    <button class="px-6 py-2 border-2 border-black border-solid bg-black text-white">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="py-[100px] px-8 lg:px-20 bg-black text-white grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div class="flex flex-col gap-4">
+                <h3>Furnique</h3>
+                <p class="text-white-secondary hover:text-white">Furnix is a furniture store that offers a wide selection of high-quality, stylish pieces for every room in the home. From modern and contemporary to traditional and classic, Furnix has something for every design preference.</p>
+            </div>
+            <div class="flex ml-16 lg:ml-0 flex-col gap-4">
+                <h5>Company</h5>
+                <ul class="text-white-secondary list-disc ml-6">
+                    <li><a class="hover:text-white transition-all ease duration-300" href="#">About Us</a></li>
+                    <li><a class="hover:text-white transition-all ease duration-300" href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5>Services</h5>
+                <ul class="text-white-secondary list-disc ml-6">
+                    <li><a class="hover:text-white transition-all ease duration-300" href="#">Delivery and Assembly</a></li>
+                    <li><a class="hover:text-white transition-all ease duration-300" href="#">Financing Options</a></li>
+                    <li><a class="hover:text-white transition-all ease duration-300" href="#">Customer Services</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5>Resource</h5>
+                <ul class="text-white-secondary hover:text-white list-disc ml-6">
+                    <li><a class="hover:text-white transition-all ease duration-300" href="#">Blog</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="../dist/js/script.js"></script>
+    </body>
+</html>
