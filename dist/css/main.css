@@ -933,6 +933,11 @@ p {
     margin-right: 5rem;
   }
 
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:ml-16 {
     margin-left: 4rem;
   }
