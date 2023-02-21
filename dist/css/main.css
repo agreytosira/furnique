@@ -555,6 +555,10 @@ video {
   top: 0px;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -612,6 +616,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-4\/5 {
@@ -730,12 +738,21 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
 }
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-4 {
@@ -795,8 +812,16 @@ video {
   padding-top: 2rem;
 }
 
+.pt-40 {
+  padding-top: 10rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .font-fraunces {
@@ -999,6 +1024,10 @@ p {
     display: none;
   }
 
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
   .lg\:w-auto {
     width: auto;
   }
@@ -1067,6 +1096,34 @@ p {
     gap: 2rem;
   }
 
+  .lg\:border-b-2 {
+    border-bottom-width: 2px;
+  }
+
+  .lg\:border-solid {
+    border-style: solid;
+  }
+
+  .lg\:border-black {
+    --tw-border-opacity: 1;
+    border-color: rgb(28 28 28 / var(--tw-border-opacity));
+  }
+
+  .lg\:border-gray-500 {
+    --tw-border-opacity: 1;
+    border-color: rgb(107 114 128 / var(--tw-border-opacity));
+  }
+
+  .lg\:border-gray-300 {
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  }
+
+  .lg\:border-gray-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(55 65 81 / var(--tw-border-opacity));
+  }
+
   .lg\:bg-body {
     --tw-bg-opacity: 1;
     background-color: rgb(244 244 244 / var(--tw-bg-opacity));
@@ -1094,12 +1151,26 @@ p {
     padding-right: 1.5rem;
   }
 
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .lg\:pr-32 {
     padding-right: 8rem;
   }
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem;
   }
 
   .lg\:text-left {
@@ -1109,6 +1180,18 @@ p {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:shadow-lg {
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:shadow-md {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
   .lg\:hover\:-translate-y-6:hover {

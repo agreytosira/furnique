@@ -12,11 +12,11 @@
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        <header class="fixed lg:relative top-0 w-full bg-white lg:bg-body">
-            <div class="flex flex-col lg:flex-row mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 items-center lg:justify-between py-4">
+        <header class="z-50 py-4 lg:py-8 fixed top-0 w-full bg-white lg:bg-body transition-all duration-300 ease" id="navbar">
+            <div class="flex flex-col lg:flex-row mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 items-center lg:justify-between">
                 <div class="flex lg:inline-flex items-center justify-between w-full lg:w-auto">
                     <h3 class="text-2xl lg:text-3xl">Furnique</h3>
-                    <button id="navbar-toggle" class="p-4 border-solid border-gray-700 border-2 rounded flex lg:hidden"><i class="fa-regular fa-bars"></i></button>
+                    <button id="navbar-toggle" class="p-2 border-solid border-gray-700 border-2 rounded flex lg:hidden"><i class="fa-regular fa-bars"></i></button>
                 </div>
                 <ul class="navbar-menu hidden lg:flex pt-8 lg:p-0 flex-col lg:flex-row text-center gap-8 lg:gap-12">
                     <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 py-2 lg:p-0" href="#">Home</a></li>
@@ -36,8 +36,8 @@
             </div>
         </header>
         <!-- Jumbotron Section -->
-        <section class="jumbotron w-full mt-12 pt-24 lg:pt-0">
-            <div class="flex flex-nowrap flex-col lg:flex-row items-center gap-8">
+        <section class="jumbotron w-full" id="jumbotron">
+            <div class="flex flex-nowrap flex-col lg:flex-row items-center justify-center pt-40 lg:pt-0 lg:h-screen gap-8">
                 <div class="flex flex-col mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 gap-8">
                     <div class="flex flex-col gap-4 items-center justify-center text-center lg:items-start lg:justify-start lg:text-left">
                         <h1>
@@ -147,10 +147,10 @@
                 <div class="w-full flex justify-center lg:justify-start">
                     <img src="./img/Sofa.png" alt="Sofa" />
                 </div>
-                <div class="flex flex-col gap-8 text-center lg:text-left items-center lg:items-start">
+                <div class="flex flex-col gap-8 items-center lg:items-start">
                     <div class="flex flex-col gap-4">
-                        <h2>High Quality Guaranted</h2>
-                        <p>
+                        <h2 class="text-center lg:text-left">High Quality Guaranted</h2>
+                        <p class="text-justify lg:text-left">
                             Investing in high-quality furniture is worth it for both style and longevity. Not only will it enhance the look and feel of your home, but it will also last longer and save you money in the long run. Don't settle for cheaply made pieces that will need to be replaced or
                             repaired frequently. Choose furniture that will stand the test of time and truly elevate your space.Investing in high-quality furniture is worth it for both style and longevity.
                         </p>
@@ -209,7 +209,7 @@
                     <p>Sign up for our newsletter and receive exclusive updates and promotions</p>
                 </div>
                 <div class="w-full lg:w-1/2 flex items-center mx-auto md:flex-row gap-0 justify-center">
-                    <input class="lg:w-3/5 px-4 py-2 border-2 outline-0 border-black border-solid" type="text" placeholder="Search your product here" />
+                    <input class="lg:w-3/5 px-4 py-2 border-2 outline-0 border-black border-solid" type="text" placeholder="Enter your email address here" />
                     <button class="lg:w-1/5 px-4 py-2 border-2 border-black border-solid bg-black text-white">Subscribe</button>
                 </div>
             </div>
