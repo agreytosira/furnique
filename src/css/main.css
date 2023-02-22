@@ -12,11 +12,15 @@ body {
     @apply mx-20;
 }
 
+.filter-active {
+    @apply border-black text-black;
+}
+
 @media (min-width: 1024px) {
-    .active {
+    .nav-active {
         color: #000;
     }
-    .active::after {
+    .nav-active::after {
         content: "";
         display: block;
         width: 50%;

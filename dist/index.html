@@ -13,17 +13,17 @@
     </head>
     <body>
         <header class="z-50 py-4 lg:py-8 fixed top-0 w-full bg-white lg:bg-body transition-all duration-300 ease" id="navbar">
-            <div class="flex flex-col lg:flex-row mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 items-center lg:justify-between">
+            <div class="flex flex-col lg:flex-row mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 items-center">
                 <div class="flex lg:inline-flex items-center justify-between w-full lg:w-auto">
-                    <h3 class="text-2xl lg:text-3xl">Furnique</h3>
+                    <a href="./"> <h3 class="font-bold text-fraunces text-2xl lg:text-3xl">Furnique</h3> </a>
                     <button id="navbar-toggle" class="p-2 border-solid border-gray-700 border-2 rounded flex lg:hidden"><i class="fa-regular fa-bars"></i></button>
                 </div>
-                <ul class="navbar-menu hidden lg:flex pt-8 lg:p-0 flex-col lg:flex-row text-center gap-8 lg:gap-12">
-                    <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="active px-8 py-2 lg:p-0" href="./index.html">Home</a></li>
+                <ul class="navbar-menu lg:ml-16 hidden lg:flex pt-8 lg:p-0 flex-col lg:flex-row text-center gap-8 lg:gap-12">
+                    <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="nav-active px-8 py-2 lg:p-0" href="./index.html">Home</a></li>
                     <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 py-2 lg:p-0" href="./catalog.html">Catalog</a></li>
                     <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 py-2 lg:p-0" href="./about.html">About</a></li>
                 </ul>
-                <div class="navbar-menu hidden lg:flex pb-8 lg:p-0 flex-col mt-8 lg:mt-0 lg:flex-row gap-8 lg:gap-8">
+                <div class="lg:ml-auto navbar-menu hidden lg:flex pb-8 lg:p-0 flex-col mt-8 lg:mt-0 lg:flex-row gap-8 lg:gap-8">
                     <a href="#" class="px-8 py-2 lg:p-0 inline-flex items-center justify-center gap-2 uppercase"
                         ><i class="fas fa-search"></i>
                         <p class="inline-flex lg:hidden text-sm font-bold text-black-secondary">Search</p>
@@ -104,7 +104,7 @@
                         <img src="./img/Product 1.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">HYLISS</p>
-                            <h5>Rp 329.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 329.000</h5>
                         </div>
                     </div>
                 </a>
@@ -113,7 +113,7 @@
                         <img src="./img/Product 2.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">BRUSAL</p>
-                            <h5>Rp 1.499.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 1.499.000</h5>
                         </div>
                     </div>
                 </a>
@@ -122,7 +122,7 @@
                         <img src="./img/Product 3.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">BRIMNES</p>
-                            <h5>Rp 2.299.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 2.299.000</h5>
                         </div>
                     </div>
                 </a>
@@ -131,7 +131,7 @@
                         <img src="./img/Product 4.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">HEMNES</p>
-                            <h5>Rp 2.499.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 2.499.000</h5>
                         </div>
                     </div>
                 </a>
@@ -243,6 +243,7 @@
                 </ul>
             </div>
         </footer>
+        <script src="./js/jquery-3.6.3.min.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>

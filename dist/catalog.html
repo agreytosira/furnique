@@ -13,17 +13,17 @@
     </head>
     <body>
         <header class="z-50 py-4 lg:py-8 fixed top-0 w-full bg-white lg:bg-body transition-all duration-300 ease" id="navbar">
-            <div class="flex flex-col lg:flex-row mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 items-center lg:justify-between">
+            <div class="flex flex-col lg:flex-row mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 items-center">
                 <div class="flex lg:inline-flex items-center justify-between w-full lg:w-auto">
-                    <h3 class="text-2xl lg:text-3xl">Furnique</h3>
+                    <a href="./"> <h3 class="font-bold text-fraunces text-2xl lg:text-3xl">Furnique</h3> </a>
                     <button id="navbar-toggle" class="p-2 border-solid border-gray-700 border-2 rounded flex lg:hidden"><i class="fa-regular fa-bars"></i></button>
                 </div>
-                <ul class="navbar-menu hidden lg:flex pt-8 lg:p-0 flex-col lg:flex-row text-center gap-8 lg:gap-12">
+                <ul class="navbar-menu lg:ml-16 hidden lg:flex pt-8 lg:p-0 flex-col lg:flex-row text-center gap-8 lg:gap-12">
                     <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 py-2 lg:p-0" href="./index.html">Home</a></li>
-                    <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="active px-8 py-2 lg:p-0" href="./catalog.html">Catalog</a></li>
+                    <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="nav-active px-8 py-2 lg:p-0" href="./catalog.html">Catalog</a></li>
                     <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 py-2 lg:p-0" href="./about.html">About</a></li>
                 </ul>
-                <div class="navbar-menu hidden lg:flex pb-8 lg:p-0 flex-col mt-8 lg:mt-0 lg:flex-row gap-8 lg:gap-8">
+                <div class="lg:ml-auto navbar-menu hidden lg:flex pb-8 lg:p-0 flex-col mt-8 lg:mt-0 lg:flex-row gap-8 lg:gap-8">
                     <a href="#" class="px-8 py-2 lg:p-0 inline-flex items-center justify-center gap-2 uppercase"
                         ><i class="fas fa-search"></i>
                         <p class="inline-flex lg:hidden text-sm font-bold text-black-secondary">Search</p>
@@ -36,101 +36,96 @@
             </div>
         </header>
 
-        <section class="featured-products my-40">
-            <div class="text-center flex flex-col gap-2 mb-16">
-                <h2>Our Catalogs</h2>
-
-                <div class="flex items-center mx-auto" id="filter">
-                    <input class="hidden" type="radio" name="filter" id="all" checked />
-                    <label class="cursor-pointer px-6 py-1 font-semibold border-b-2 border-black border-solid text-black" for="all">All</label>
-                    <input class="hidden" type="radio" name="filter" id="chair" />
-                    <label class="cursor-pointer px-6 py-1 font-semibold border-b-2 border-gray-300 border-solid text-black-secondary" for="chair">Chair</label>
-                    <input class="hidden" type="radio" name="filter" id="table" />
-                    <label class="cursor-pointer px-6 py-1 font-semibold border-b-2 border-gray-300 border-solid text-black-secondary" for="table">Table</label>
-                    <input class="hidden" type="radio" name="filter" id="wardrobe" />
-                    <label class="cursor-pointer px-6 py-1 font-semibold border-b-2 border-gray-300 border-solid text-black-secondary" for="wardrobe">Wardrobe</label>
-                    <input class="hidden" type="radio" name="filter" id="mattress" />
-                    <label class="cursor-pointer px-6 py-1 font-semibold border-b-2 border-gray-300 border-solid text-black-secondary" for="mattress">Mattress</label>
-                    <input class="hidden" type="radio" name="filter" id="rack" />
-                    <label class="cursor-pointer px-6 py-1 font-semibold border-b-2 border-gray-300 border-solid text-black-secondary" for="rack">Rack</label>
+        <section class="my-40">
+            <flex class="flex flex-col gap-4">
+                <div class="text-center">
+                    <h2>Our Catalogs</h2>
                 </div>
-            </div>
-            <div class="mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
-                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                <ul class="mx-auto flex flex-wrap justify-center">
+                    <li class="px-4 py-2 cursor-pointer font-semibold text-black-secondary list filter-active list-none border-b-2 border-gray-300 border-solid" data-filter="all">All</li>
+                    <li class="px-4 py-2 cursor-pointer font-semibold text-black-secondary list list-none border-b-2 border-gray-300 border-solid" data-filter="chair">Chair</li>
+                    <li class="px-4 py-2 cursor-pointer font-semibold text-black-secondary list list-none border-b-2 border-gray-300 border-solid" data-filter="table">Table</li>
+                    <li class="px-4 py-2 cursor-pointer font-semibold text-black-secondary list list-none border-b-2 border-gray-300 border-solid" data-filter="wardrobe">Wardrobe</li>
+                    <li class="px-4 py-2 cursor-pointer font-semibold text-black-secondary list list-none border-b-2 border-gray-300 border-solid" data-filter="mattress">Mattress</li>
+                    <li class="px-4 py-2 cursor-pointer font-semibold text-black-secondary list list-none border-b-2 border-gray-300 border-solid" data-filter="rack">Rack</li>
+                </ul>
+            </flex>
+            <div class="mx-5 mt-16 lg:mx-10 xl:mx-20 2xl:mx-40 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+                <a href="#" class="itemBox rack lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
                     <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
                         <img src="./img/Product 1.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">HYLISS</p>
-                            <h5>Rp 329.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 329.000</h5>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                <a href="#" class="itemBox wardrobe lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
                     <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
                         <img src="./img/Product 2.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">BRUSAL</p>
-                            <h5>Rp 1.499.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 1.499.000</h5>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                <a href="#" class="itemBox wardrobe lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
                     <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
                         <img src="./img/Product 3.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">BRIMNES</p>
-                            <h5>Rp 2.299.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 2.299.000</h5>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                <a href="#" class="itemBox mattress lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
                     <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
                         <img src="./img/Product 4.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">HEMNES</p>
-                            <h5>Rp 2.499.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 2.499.000</h5>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                <a href="#" class="itemBox chair lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
                     <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
                         <img src="./img/Product 5.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">FLINTAN</p>
-                            <h5>Rp 1.249.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 1.249.000</h5>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                <a href="#" class="itemBox rack lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
                     <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
                         <img src="./img/Product 6.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">TROTTEN</p>
-                            <h5>Rp 3.799.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 3.799.000</h5>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                <a href="#" class="itemBox wardrobe lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
                     <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
                         <img src="./img/Product 7.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">GALANT</p>
-                            <h5>Rp 2.999.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 2.999.000</h5>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
+                <a href="#" class="itemBox chair lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
                     <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
                         <img src="./img/Product 8.jpg" alt="Product Image" />
                         <div>
                             <p class="font-semibold">LÅNGFJÄLL</p>
-                            <h5>Rp 1.999.000</h5>
+                            <h5 class="text-base lg:text-xl">Rp 1.999.000</h5>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="flex justify-center mt-16" id="pagination">
-                <ul class="flex space-x-4 items-center">
+                <ul class="flex flex-wrap justify-center gap-4 items-center">
                     <li><a class="font-semibold uppercase py-1 px-3 border-2 border-gray-300 text-gray-300 border-solid inline-flex" href="#">Previous</a></li>
                     <li><a class="font-semibold uppercase py-1 px-3 border-2 border-black border-solid bg-black text-white inline-flex hover:bg-black hover:text-white transition-all duration-300 ease" href="#">1</a></li>
                     <li><a class="font-semibold uppercase py-1 px-3 border-2 border-black border-solid inline-flex hover:bg-black hover:text-white transition-all duration-300 ease" href="#">2</a></li>
@@ -143,6 +138,7 @@
             </div>
         </section>
 
+        <script src="./js/jquery-3.6.3.min.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
