@@ -24,7 +24,6 @@ body {
         content: "";
         display: block;
         width: 50%;
-        margin: 0 auto;
         height: 2px;
         background-color: #000;
     }
@@ -34,8 +33,14 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     @apply font-fraunces subpixel-antialiased;
+}
+
+p {
+    line-height: 24px;
+    @apply text-black-secondary subpixel-antialiased;
 }
 
 h1 {
@@ -53,7 +58,11 @@ h4 {
 h5 {
     @apply text-xl;
 }
-p {
-    line-height: 24px;
-    @apply text-black-secondary subpixel-antialiased;
+
+h6 {
+    @apply text-lg font-semibold;
+}
+
+.container {
+    @apply mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 w-auto;
 }
