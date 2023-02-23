@@ -12,7 +12,7 @@ body {
     @apply border-black text-black;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .nav-active {
         @apply bg-black text-white;
     }
