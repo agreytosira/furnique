@@ -12,6 +12,12 @@ body {
     @apply border-black text-black;
 }
 
+@media (max-width: 1024px) {
+    .nav-active {
+        @apply bg-black text-white;
+    }
+}
+
 @media (min-width: 1024px) {
     .nav-active {
         color: #000;
@@ -22,6 +28,16 @@ body {
         width: 50%;
         height: 2px;
         background-color: #000;
+    }
+
+    .overlay {
+        opacity: 0;
+        display: flex;
+        transition: all 0.3s ease;
+    }
+
+    .overlay-trigger:hover .overlay {
+        opacity: 1;
     }
 }
 
@@ -61,14 +77,4 @@ h6 {
 
 .container {
     @apply mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 w-auto;
-}
-
-.overlay {
-    opacity: 0;
-    display: flex;
-    transition: all 0.3s ease;
-}
-
-.overlay-trigger:hover .overlay {
-    opacity: 1;
 }
