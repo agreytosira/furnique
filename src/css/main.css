@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    border: 1px solid black;
+}
+
 body {
     @apply font-nunito;
     @apply text-black;
     @apply bg-body;
-}
-
-.container {
-    @apply mx-20;
 }
 
 .filter-active {
@@ -65,4 +65,14 @@ h6 {
 
 .container {
     @apply mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 w-auto;
+}
+
+.overlay {
+    opacity: 0;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.overlay-trigger:hover .overlay {
+    opacity: 1;
 }

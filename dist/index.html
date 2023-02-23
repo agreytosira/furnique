@@ -13,15 +13,15 @@
     </head>
     <body>
         <header class="z-50 py-4 lg:py-8 fixed top-0 w-full bg-white lg:bg-body transition-all duration-300 ease" id="navbar">
-            <div class="flex flex-col lg:flex-row container items-center">
+            <div class="w-auto flex flex-col lg:flex-row mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 items-center">
                 <div class="flex lg:inline-flex items-center justify-between w-full lg:w-auto">
                     <a href="./"> <h3 class="font-bold text-fraunces text-2xl lg:text-3xl">Furnique</h3> </a>
                     <button id="navbar-toggle" class="p-2 border-solid border-gray-700 border-2 rounded flex lg:hidden"><i class="fa-regular fa-bars"></i></button>
                 </div>
                 <ul class="navbar-menu lg:ml-16 hidden lg:flex pt-8 lg:p-0 flex-col lg:flex-row text-center gap-8 lg:gap-12">
-                    <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="nav-active px-8 py-2 lg:p-0" href="./index.html">Home</a></li>
-                    <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 py-2 lg:p-0" href="./catalog.html">Catalog</a></li>
-                    <li class="uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 py-2 lg:p-0" href="./about.html">About</a></li>
+                    <li class="inline-flex items-center uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="nav-active px-8 w-full py-2 lg:p-0" href="./index.html">Home</a></li>
+                    <li class="inline-flex items-center uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 w-full py-2 lg:p-0" href="./catalog.html">Catalog</a></li>
+                    <li class="inline-flex items-center uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 w-full py-2 lg:p-0" href="./about.html">About</a></li>
                 </ul>
                 <div class="lg:ml-auto navbar-menu hidden lg:flex pb-8 lg:p-0 flex-col mt-8 lg:mt-0 lg:flex-row gap-8 lg:gap-8">
                     <a href="#" class="px-8 py-2 lg:p-0 inline-flex items-center justify-center gap-2 uppercase"
@@ -38,7 +38,7 @@
         <!-- Jumbotron Section -->
         <section class="jumbotron w-full" id="jumbotron">
             <div class="flex flex-nowrap flex-col lg:flex-row items-center justify-center pt-40 lg:pt-0 lg:h-screen gap-8">
-                <div class="flex flex-col container gap-8">
+                <div class="flex flex-col gap-8">
                     <div class="flex flex-col gap-4 items-center justify-center text-center lg:items-start lg:justify-start lg:text-left">
                         <h1>
                             Furnish Your Home,<br />
@@ -57,8 +57,8 @@
             </div>
         </section>
         <!-- Services Section -->
-        <section class="services my-40">
-            <div class="container grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <section class="services my-40 flex justify-center">
+            <div class="mx-10 lg:mx-20 grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <!-- Benefit Box -->
                 <div class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease bg-white p-8 gap-8 flex flex-col items-start">
                     <div class="p-4 inline-flex items-center justify-center bg-black">
@@ -93,12 +93,12 @@
         </section>
 
         <!-- Featured Products Section -->
-        <section class="featured-products my-40">
+        <section class="flex flex-col items-center featured-products my-40 mx-20">
             <div class="text-center flex flex-col gap-2 mb-16">
                 <h2>Featured Products</h2>
                 <p>Recommended Products for You</p>
             </div>
-            <div class="container grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+            <div class="mx-10 lg:mx-20 2xl:mx-40 w-full grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
                 <a href="#" class="lg:hover:-translate-y-6 lg:hover:shadow-lg transition-all duration-300 ease">
                     <div class="p-4 lg:p-8 bg-white flex flex-col gap-4">
                         <img src="./img/Product 1.jpg" alt="Product Image" />
@@ -137,13 +137,13 @@
                 </a>
             </div>
             <div class="flex justify-center mt-16">
-                <a href="#" class="bg-black text-white inline-block px-6 py-3 hover:scale-110 transition-all ease duration-300">Explore More Products</a>
+                <a href="./catalog.html" class="bg-black text-white inline-block px-6 py-3 hover:scale-110 transition-all ease duration-300">View Catalog</a>
             </div>
         </section>
 
         <!-- Offer Section -->
-        <section class="offer my-40">
-            <div class="container grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <section class="flex justify-center offer my-40">
+            <div class="mx-10 lg:mx-20 grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div class="w-full flex justify-center lg:justify-start">
                     <img src="./img/Sofa.png" alt="Sofa" />
                 </div>
@@ -161,8 +161,8 @@
         </section>
 
         <!-- Testimonial Section -->
-        <section class="testimonial my-40">
-            <div class="container">
+        <section class="flex justify-center my-40">
+            <div class="mx-10 lg:mx-20">
                 <div class="text-center mb-16">
                     <h2>Our Satisfied Customers</h2>
                 </div>
@@ -203,7 +203,7 @@
 
         <!-- Newsletter Section -->
         <section class="newsletter my-40">
-            <div class="lg:mx-10 xl:mx-20 2xl:mx-40 flex flex-col flex-wrap gap-8 text-center justify-center">
+            <div class="mx-10 lg:mx-20 flex flex-col flex-wrap gap-8 text-center justify-center">
                 <div class="flex flex-col gap-2">
                     <h2>Subscribe Our Newsletter</h2>
                     <p>Sign up for our newsletter and receive exclusive updates and promotions</p>
