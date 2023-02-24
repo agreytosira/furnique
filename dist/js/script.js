@@ -49,3 +49,24 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("lg:bg-white", "lg:py-2", "lg:shadow-md");
     }
 });
+
+// Product Image Switch
+let MainImg = document.getElementById("main-img");
+let smallimg = document.getElementsByClassName("small-img");
+
+smallimg[1].onclick = () => {
+    MainImg.src = smallimg[1].src;
+};
+smallimg[2].onclick = () => {
+    MainImg.src = smallimg[2].src;
+};
+smallimg[3].onclick = () => {
+    MainImg.src = smallimg[3].src;
+};
+smallimg[4].onclick = () => {
+    MainImg.src = smallimg[4].src;
+};
+
+MainImg.onclick = () => {
+    MainImg.src = smallimg[0].src;
+};

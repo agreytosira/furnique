@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detail Brimnes - Furnique</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="/dist/css/main.css" />
+    </head>
+    <body>
+        <header class="z-50 py-4 lg:py-8 fixed top-0 w-full bg-white lg:bg-body transition-all duration-300 ease" id="navbar">
+            <div class="w-auto flex flex-col lg:flex-row mx-5 lg:mx-20 2xl:mx-40 items-center">
+                <div class="flex lg:inline-flex items-center justify-between w-full lg:w-auto">
+                    <a href="../index.html"> <h3 class="font-bold text-fraunces text-2xl lg:text-3xl">Furnique</h3> </a>
+                    <button id="navbar-toggle" class="p-4 border-solid border-gray-700 border-2 rounded flex lg:hidden"><i class="fa-regular fa-bars"></i></button>
+                </div>
+                <ul class="navbar-menu lg:ml-16 hidden lg:flex pt-8 lg:p-0 flex-col lg:flex-row text-center gap-8 lg:gap-12">
+                    <li class="inline-flex items-center uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 w-full py-2 lg:p-0" href="../index.html">Home</a></li>
+                    <li class="inline-flex items-center uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 w-full py-2 lg:p-0" href="../catalog.html">Catalog</a></li>
+                    <li class="inline-flex items-center uppercase text-sm font-bold text-black-secondary lg:hover:text-black transition-all duration-300 ease"><a class="px-8 w-full py-2 lg:p-0" href="../about.html">About</a></li>
+                </ul>
+                <div class="lg:ml-auto navbar-menu hidden lg:flex pb-8 lg:p-0 flex-col mt-8 lg:mt-0 lg:flex-row gap-8 lg:gap-4">
+                    <a href="#" class="transition-all duration-300 ease lg:hover:bg-gray-200 px-8 py-2 lg:p-2 lg:rounded-full inline-flex items-center justify-center gap-2 uppercase"
+                        ><i class="fas fa-search"></i>
+                        <p class="inline-flex lg:hidden text-sm font-bold text-black-secondary">Search</p>
+                    </a>
+                    <a href="#" class="transition-all duration-300 ease lg:hover:bg-gray-200 px-8 py-2 lg:p-2 lg:rounded-full inline-flex items-center justify-center gap-2 uppercase"
+                        ><i class="fas fa-user"></i>
+                        <p class="inline-flex lg:hidden text-sm font-bold text-black-secondary">Login / Register</p></a
+                    >
+                </div>
+            </div>
+        </header>
+
+        <section class="py-3 mt-24 mb-8 bg-white" id="breadcrumb">
+            <div class="px-5 lg:px-20 2xl:px-40">
+                <ul class="breadcrumb flex items-center gap-4 text-black-secondary">
+                    <li><a class="font-semibold text-sm" href="../index.html">Home</a></li>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <li><a class="font-semibold text-sm" href="../catalog.html">Catalog</a></li>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <li><a class="font-semibold text-sm text-black" href="#">Wardrobe</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="product-details">
+            <div class="mx-5 lg:mx-20 2xl:mx-40">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4">
+                        <img class="cursor-pointer w-full aspect-square object-cover" id="main-img" src="../img/Brimnes 1.jpg" alt="" />
+                        <div class="grid grid-cols-4 gap-4 mt-4">
+                            <img src="../img/Brimnes 1.jpg" alt="" class="small-img aspect-square w-full hidden" />
+                            <img src="../img/Brimnes 2.jpg" alt="" class="small-img aspect-square w-full object-cover cursor-pointer border-solid hover:border-black border-2" />
+                            <img src="../img/Brimnes 3.jpg" alt="" class="small-img aspect-square w-full object-cover cursor-pointer border-solid hover:border-black border-2" />
+                            <img src="../img/Brimnes 4.jpg" alt="" class="small-img aspect-square w-full object-cover cursor-pointer border-solid hover:border-black border-2" />
+                            <img src="../img/Brimnes 5.jpg" alt="" class="small-img aspect-square w-full object-cover cursor-pointer border-solid hover:border-black border-2" />
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 flex flex-col gap-8">
+                        <div>
+                            <p>Wardrobe with 2 doors, white, 78x190 cm</p>
+                            <h2>BRIMNES</h2>
+                            <h4 class="text-black-secondary">Rp 2.299.000</h4>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h6>Color</h6>
+                            <div class="flex gap-3">
+                                <button class="font-semibold border-black border-solid border-2 bg-black text-sm text-white px-4 py-1">White</button>
+                                <button aria-tooltip="Out of Stock" class="cursor-not-allowed font-semibold border-gray-300 border-solid border-2 text-sm text-gray-300 px-4 py-1">Black</button>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <h6>About Product</h6>
+                            <p class="text-justify">
+                                The wardrobe with 2 doors from the Brimnes collection is a stylish and functional piece of furniture that can elevate the look of any bedroom. Its ample storage space and adjustable shelves make it perfect for organizing clothes, shoes, and accessories. The
+                                soft-closing doors ensure a quiet and gentle closing, which minimizes any disturbance in your room. Assembly is easy with the clear instructions that come with it, saving you time and effort. The wardrobe's sleek and modern design will complement any decor style,
+                                while its high-quality materials make it durable and able to withstand daily wear and tear.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3">
+                        <div class="px-6 py-8 bg-white flex flex-col gap-8">
+                            <h5 class="text-center">Order Summary</h5>
+                            <div class="flex flex-col gap-4">
+                                <div class="flex items-center justify-between">
+                                    <p class="font-semibold text-black">Quantity</p>
+                                    <div class="flex gap-0">
+                                        <button class="w-6 h-6 flex items-center justify-center text-white bg-black p-1">-</button>
+                                        <input class="border-solid border-black border-2 w-8 text-sm h-6 flex items-center justify-center text-center" type="text" value="1" />
+                                        <button class="w-6 h-6 flex items-center justify-center text-white bg-black p-1">+</button>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <p class="font-semibold text-black">Dimension</p>
+                                    <p class="font-semibold text-black-secondary">78x190 cm</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <p class="font-semibold text-black">Weight</p>
+                                    <p class="font-semibold text-black-secondary">61.97 kg</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <p class="font-semibold text-black">Color</p>
+                                    <p class="font-semibold text-black-secondary">White</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <p class="font-semibold text-black">Delivery Cost</p>
+                                    <p class="font-semibold text-black-secondary">Rp 80.000</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <a href="#" class="font-semibold px-6 py-2 text-center border-black border-solid border-2">Add to Cart</a>
+                                <a href="#" class="font-semibold px-6 py-2 text-center border-black border-solid border-2 bg-black text-white">Checkout Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="mt-40">
+            <div class="py-[100px] px-5 lg:px-20 2xl:px-40 bg-black text-white grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <div class="flex flex-col gap-4">
+                    <h3>Furnique</h3>
+                    <p class="text-white-secondary hover:text-white">Furnix is a furniture store that offers a wide selection of high-quality, stylish pieces for every room in the home. From modern and contemporary to traditional and classic, Furnix has something for every design preference.</p>
+                </div>
+                <div class="flex lg:ml-16 flex-col gap-4">
+                    <h5>Company</h5>
+                    <ul class="text-white-secondary">
+                        <li><a class="hover:text-white transition-all ease duration-300" href="#">About Us</a></li>
+                        <li><a class="hover:text-white transition-all ease duration-300" href="#">Career</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h5>Services</h5>
+                    <ul class="text-white-secondary">
+                        <li><a class="hover:text-white transition-all ease duration-300" href="#">Delivery and Assembly</a></li>
+                        <li><a class="hover:text-white transition-all ease duration-300" href="#">Financing Options</a></li>
+                        <li><a class="hover:text-white transition-all ease duration-300" href="#">Customer Services</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h5>Resource</h5>
+                    <ul class="text-white-secondary hover:text-white">
+                        <li><a class="hover:text-white transition-all ease duration-300" href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/dist/js/jquery-3.6.3.min.js"></script>
+        <script src="/dist/js/script.js"></script>
+    </body>
+</html>

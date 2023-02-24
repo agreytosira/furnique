@@ -65,7 +65,8 @@
         "yaml": "^1.10.2"
     },
     "scripts": {
-        "build": "npx tailwindcss -i ./src/css/main.css -o ./dist/css/main.css --watch"
+        "build": "npx tailwindcss -i ./src/css/main.css -o ./dist/css/main.css --watch",
+        "minify": "npx tailwindcss -i ./src/css/main.css -o ./dist/css/main.css --minify"
     },
     "keywords": [],
     "author": "",
