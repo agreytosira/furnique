@@ -42,11 +42,11 @@ const jumbotron = document.querySelector("#jumbotron");
 window.addEventListener("scroll", function () {
     navbar.classList.toggle("lg:bg-body", window.scrollY > 0);
     if (window.scrollY > 0) {
-        navbar.classList.add("lg:bg-white", "lg:py-2", "lg:shadow-md");
+        navbar.classList.add("lg:bg-white", "lg:py-2", "drop-shadow-md");
         navbar.classList.remove("lg:bg-body", "lg:py-8");
     } else {
         navbar.classList.add("lg:bg-body", "lg:py-8");
-        navbar.classList.remove("lg:bg-white", "lg:py-2", "lg:shadow-md");
+        navbar.classList.remove("lg:bg-white", "lg:py-2", "drop-shadow-md");
     }
 });
 
