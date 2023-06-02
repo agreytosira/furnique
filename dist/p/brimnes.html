@@ -90,9 +90,9 @@
                                 <div class="flex items-center justify-between">
                                     <p class="font-semibold text-black">Quantity</p>
                                     <div class="flex gap-0">
-                                        <button class="w-6 h-6 flex items-center justify-center text-white bg-black p-1">-</button>
-                                        <input class="border-solid border-black border w-8 text-sm h-6 flex items-center justify-center text-center" type="text" value="1" />
-                                        <button class="w-6 h-6 flex items-center justify-center text-white bg-black p-1">+</button>
+                                        <button class="w-6 h-6 flex items-center justify-center text-white bg-black p-1" onclick="quantityMinus()">-</button>
+                                        <input class="border-solid border-black border w-8 text-sm h-6 flex items-center justify-center text-center" type="text" value="1" id="input-quantity" />
+                                        <button class="w-6 h-6 flex items-center justify-center text-white bg-black p-1" onclick="quantityPlus()">+</button>
                                     </div>
                                 </div>
                                 <div class="flex items-center justify-between">
@@ -155,5 +155,16 @@
 
         <script src="../js/jquery-3.6.3.min.js"></script>
         <script src="../js/script.js"></script>
+        <script>
+            const quantityPlus = () => {
+                document.querySelector("#input-quantity").value = parseInt(document.querySelector("#input-quantity").value) + 1;
+            };
+
+            const quantityMinus = () => {
+                if (parseInt(document.querySelector("#input-quantity").value) > 1) {
+                    document.querySelector("#input-quantity").value = parseInt(document.querySelector("#input-quantity").value) - 1;
+                }
+            };
+        </script>
     </body>
 </html>
