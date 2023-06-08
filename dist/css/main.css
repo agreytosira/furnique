@@ -973,6 +973,11 @@ video {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1139,6 +1144,10 @@ h6 {
     margin-left: 10rem;
     margin-right: 10rem;
   }
+}
+
+.button-toggle img {
+  width: 100%;
 }
 
 .hover\:scale-110:hover {

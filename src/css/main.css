@@ -78,3 +78,7 @@ h6 {
 .container {
     @apply mx-5 lg:mx-10 xl:mx-20 2xl:mx-40 w-auto;
 }
+
+.button-toggle img {
+    width: 100%;
+}
